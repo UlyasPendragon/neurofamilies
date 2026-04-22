@@ -1,7 +1,7 @@
 baseURL = "https://neurofamilies.org/"
 languageCode = "en-us"
 title = "NeuroFamilies — Resource Directory for Neurodiverse Families"
-theme = ""
+
 
 [params]
   description = "Find autism, ADHD, and neurodiverse resources near you. Free searchable directory of therapists, schools, funding, support groups, and more across North America."
