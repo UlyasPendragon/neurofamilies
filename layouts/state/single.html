@@ -1,0 +1,112 @@
+{{ define "main" }}
+<section class="state-page">
+  <div class="container">
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/states/">States</a></li>
+        <li aria-current="page">{{ .Title }}</li>
+      </ol>
+    </nav>
+    
+    <h1>Autism & Neurodiverse Resources in {{ .Title }}</h1>
+    <p class="state-description">Find ABA therapy, speech therapy, support groups, funding programs, and more in {{ .Title }}. {{ .Params.resource_count }} verified resources.</p>
+    
+    <form class="search-form state-search" action="/search/" method="get" role="search">
+      <div class="search-input-group">
+        <label for="state-search" class="sr-only">Search {{ .Title }} resources</label>
+        <input type="search" id="state-search" name="q" 
+               placeholder="Search resources in {{ .Title }}..."
+               autocomplete="off">
+        <input type="hidden" name="state" value="{{ .Params.state_abbr }}">
+        <button type="submit">🔍 Search</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="categories-overview" aria-labelledby="categories-heading">
+  <div class="container">
+    <h2 id="categories-heading">Browse by Category</h2>
+    <div class="category-grid">
+      {{ range .Params.categories }}
+      <a href="/states/{{ $.Params.state_slug }}/{{ .slug }}/" class="category-card">
+        <span class="category-icon" aria-hidden="true">{{ .icon }}</span>
+        <span class="category-name">{{ .name }}</span>
+        <span class="category-count">{{ .count }} resources</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="state-resources" aria-labelledby="resources-heading">
+  <div class="container">
+    <h2 id="resources-heading">All Resources in {{ .Title }}</h2>
+    
+    <div class="resources-list">
+      {{ range .Params.resources }}
+      <article class="resource-card">
+        <div class="resource-header">
+          <h3>
+            <a href="{{ .contact.website | default "#" }}" target="_blank" rel="noopener">
+              {{ .name }}
+            </a>
+          </h3>
+          <span class="resource-category tag">{{ .category | humanize }}</span>
+        </div>
+        
+        <p class="resource-description">{{ .description | truncate 200 }}</p>
+        
+        <div class="resource-details">
+          {{ if .contact.phone }}
+          <span class="resource-phone">
+            📞 <a href="tel:{{ .contact.phone }}">{{ .contact.phone }}</a>
+          </span>
+          {{ end }}
+          
+          {{ if .contact.website }}
+          <span class="resource-website">
+            🌐 <a href="{{ .contact.website }}" target="_blank" rel="noopener">Website</a>
+          </span>
+          {{ end }}
+          
+          {{ if .address }}
+          <span class="resource-location">
+            📍 {{ .address.city }}, {{ .address.state }} {{ .address.zip }}
+          </span>
+          {{ end }}
+        </div>
+        
+        {{ if .details.specialties }}
+        <div class="resource-specialties">
+          {{ range .details.specialties }}
+          <span class="tag tag-small">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <div class="resource-meta">
+          <span class="last-verified">Verified: {{ .meta.last_verified }}</span>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    
+    <div class="view-all">
+      <p>Showing {{ len .Params.resources }} of {{ .Params.resource_count }} resources.</p>
+      <a href="/search/?state={{ .Params.state_abbr }}" class="btn btn-primary">
+        Search All {{ .Title }} Resources →
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="submit-resource" aria-labelledby="submit-heading">
+  <div class="container">
+    <h2 id="submit-heading">Know a resource we're missing?</h2>
+    <p>Help other {{ .Title }} families by suggesting a resource for our directory.</p>
+    <a href="/submit/" class="btn btn-secondary">Submit a Resource →</a>
+  </div>
+</section>
+{{ end }}

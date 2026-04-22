@@ -1,0 +1,1036 @@
+{
+  "state": "Nebraska",
+  "state_abbr": "NE",
+  "slug": "nebraska",
+  "count": 30,
+  "last_updated": "2026-04-22T03:42:09.010612",
+  "resources": [
+    {
+      "id": "ne-aba-001",
+      "name": "Center for Autism and Related Disorders (CARD)",
+      "category": "aba-therapy",
+      "subcategory": "center-based",
+      "description": "One of the world's largest ABA therapy providers, offering center-based and in-home services.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(818) 345-2345",
+        "website": "https://www.centerforautism.com"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12",
+          "13-18"
+        ],
+        "insurance_accepted": [
+          "Most major insurance",
+          "Medicaid"
+        ],
+        "specialties": [
+          "autism",
+          "ABA therapy",
+          "early intervention"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-aba-001",
+      "name": "Hopebridge Autism Therapy Centers",
+      "category": "aba-therapy",
+      "subcategory": "center-based",
+      "description": "Comprehensive autism therapy centers offering ABA, speech, and OT under one roof.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(888) 909-5474",
+        "website": "https://www.hopebridge.com"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12"
+        ],
+        "insurance_accepted": [
+          "Most major insurance",
+          "Medicaid"
+        ],
+        "specialties": [
+          "autism",
+          "ABA therapy",
+          "speech therapy",
+          "occupational therapy"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-aba-001",
+      "name": "Behavior Frontiers",
+      "category": "aba-therapy",
+      "subcategory": "in-home",
+      "description": "In-home ABA therapy services across multiple states.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(888) 922-2843",
+        "website": "https://www.behaviorfrontiers.com"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12",
+          "13-18"
+        ],
+        "insurance_accepted": [
+          "Most major insurance"
+        ],
+        "specialties": [
+          "autism",
+          "in-home ABA",
+          "behavioral therapy"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-aba-001",
+      "name": "BlueSprig Pediatrics",
+      "category": "aba-therapy",
+      "subcategory": "center-based",
+      "description": "Nationwide ABA therapy provider with center-based and in-home services.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(855) 329-0100",
+        "website": "https://www.bluesprigpediatrics.com"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12",
+          "13-18"
+        ],
+        "insurance_accepted": [
+          "Most major insurance",
+          "Medicaid"
+        ],
+        "specialties": [
+          "autism",
+          "ABA therapy",
+          "early intervention"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-aba-001",
+      "name": "Action Behavior Centers",
+      "category": "aba-therapy",
+      "subcategory": "center-based",
+      "description": "ABA therapy centers focused on early intensive behavioral intervention.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(888) 329-2340",
+        "website": "https://www.actionbehavior.com"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12"
+        ],
+        "insurance_accepted": [
+          "Most major insurance"
+        ],
+        "specialties": [
+          "autism",
+          "ABA therapy"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-spe-001",
+      "name": "The Speech Pathology Group",
+      "category": "speech-therapy",
+      "subcategory": "outpatient",
+      "description": "Speech-language pathology services specializing in autism spectrum disorders.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(925) 930-0404",
+        "website": "https://www.thespeechpathologygroup.com"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12",
+          "13-18"
+        ],
+        "insurance_accepted": [
+          "Most major insurance"
+        ],
+        "specialties": [
+          "autism",
+          "speech-language pathology",
+          "social communication"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-occ-001",
+      "name": "The Sensory Processing Disorder Foundation",
+      "category": "occupational-therapy",
+      "subcategory": "outpatient",
+      "description": "Research and treatment center for sensory processing challenges.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(303) 794-1182",
+        "website": "https://www.spdfoundation.net"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12",
+          "13-18",
+          "18+"
+        ],
+        "insurance_accepted": [
+          "Varies by location"
+        ],
+        "specialties": [
+          "sensory processing",
+          "occupational therapy",
+          "autism"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-men-001",
+      "name": "Child Mind Institute",
+      "category": "mental-health",
+      "subcategory": "outpatient",
+      "description": "Leading children's mental health organization with extensive autism resources.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(212) 308-3118",
+        "website": "https://www.childmind.org"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12",
+          "13-18"
+        ],
+        "insurance_accepted": [
+          "Most major insurance"
+        ],
+        "specialties": [
+          "autism",
+          "anxiety",
+          "ADHD",
+          "learning disorders"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-men-001",
+      "name": "The Johnson Center for Child Health and Development",
+      "category": "mental-health",
+      "subcategory": "outpatient",
+      "description": "Comprehensive autism evaluation and treatment center.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(512) 732-8400",
+        "website": "https://www.thejohnsoncenter.org"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12",
+          "13-18"
+        ],
+        "insurance_accepted": [
+          "Some insurance accepted"
+        ],
+        "specialties": [
+          "autism",
+          "developmental pediatrics",
+          "biomedical treatment"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-sup-001",
+      "name": "Autism Society of America",
+      "category": "support-groups",
+      "subcategory": "national-organization",
+      "description": "National organization providing advocacy, education, and support for the autism community.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(800) 328-8476",
+        "website": "https://autismsociety.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [
+          "N/A"
+        ],
+        "specialties": [
+          "advocacy",
+          "support groups",
+          "resources",
+          "education"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-sup-001",
+      "name": "The Arc",
+      "category": "support-groups",
+      "subcategory": "national-organization",
+      "description": "National organization advocating for people with intellectual and developmental disabilities.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(800) 433-5255",
+        "website": "https://thearc.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [
+          "N/A"
+        ],
+        "specialties": [
+          "disability rights",
+          "advocacy",
+          "support services"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-sup-001",
+      "name": "Easter Seals",
+      "category": "support-groups",
+      "subcategory": "national-organization",
+      "description": "Nonprofit providing services for individuals with disabilities including autism.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(800) 221-6827",
+        "website": "https://www.easterseals.com"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [
+          "Many insurance plans"
+        ],
+        "specialties": [
+          "therapy services",
+          "respite care",
+          "employment services"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-sup-001",
+      "name": "National Autism Association",
+      "category": "support-groups",
+      "subcategory": "national-organization",
+      "description": "Providing real help and hope for the autism community through safety resources and advocacy.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(877) 622-2884",
+        "website": "https://nationalautismassociation.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [
+          "N/A"
+        ],
+        "specialties": [
+          "safety",
+          "advocacy",
+          "resources",
+          "education"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-tec-001",
+      "name": "Proloquo2Go",
+      "category": "technology",
+      "subcategory": "AAC-app",
+      "description": "Symbol-based AAC app that gives a voice to those who cannot speak.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "",
+        "website": "https://www.assistiveware.com/products/proloquo2go"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "AAC",
+          "communication",
+          "nonverbal"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-res-001",
+      "name": "ARCH National Respite Network",
+      "category": "respite-care",
+      "subcategory": "resource-center",
+      "description": "National resource center for respite care services and caregiver support.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(919) 490-5577",
+        "website": "https://archrespite.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [
+          "N/A"
+        ],
+        "specialties": [
+          "respite care",
+          "caregiver support"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-fun-001",
+      "name": "ABLE National Resource Center",
+      "category": "funding",
+      "subcategory": "financial-planning",
+      "description": "Resource center for ABLE savings accounts for individuals with disabilities.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "",
+        "website": "https://www.ablenrc.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "ABLE accounts",
+          "financial planning",
+          "disability savings"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-fun-001",
+      "name": "National Disability Institute",
+      "category": "funding",
+      "subcategory": "financial-education",
+      "description": "Building a better financial future for people with disabilities.",
+      "address": {
+        "street": "100 Main St",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68508",
+        "country": "US"
+      },
+      "contact": {
+        "phone": "(202) 296-2040",
+        "website": "https://www.nationaldisabilityinstitute.org"
+      },
+      "details": {
+        "ages_served": [
+          "18+"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "financial education",
+          "disability benefits",
+          "tax assistance"
+        ]
+      },
+      "meta": {
+        "source": "seed-data",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-men-018",
+      "name": "Brightline",
+      "category": "mental-health",
+      "subcategory": "telehealth",
+      "description": "Virtual pediatric behavioral health services including autism evaluation and support.",
+      "contact": {
+        "phone": "(888) 201-4153",
+        "website": "https://www.hellobrightline.com"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12",
+          "13-18"
+        ],
+        "insurance_accepted": [
+          "Most major insurance"
+        ],
+        "specialties": [
+          "autism",
+          "ADHD",
+          "anxiety",
+          "behavioral health",
+          "telehealth"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-men-019",
+      "name": "LunaJoy",
+      "category": "mental-health",
+      "subcategory": "telehealth",
+      "description": "Telehealth mental health services specializing in neurodivergent women and teens.",
+      "contact": {
+        "phone": "",
+        "website": "https://www.lunajoy.com"
+      },
+      "details": {
+        "ages_served": [
+          "13-18",
+          "18+"
+        ],
+        "insurance_accepted": [
+          "Most major insurance"
+        ],
+        "specialties": [
+          "autism",
+          "ADHD",
+          "anxiety",
+          "women's mental health"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-sup-020",
+      "name": "TACA (The Autism Community in Action)",
+      "category": "support-groups",
+      "subcategory": "parent-support",
+      "description": "National nonprofit providing support, education, and hope to families affected by autism.",
+      "contact": {
+        "phone": "",
+        "website": "https://tacanow.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "parent support",
+          "resources",
+          "education"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-sup-021",
+      "name": "National Alliance on Mental Illness (NAMI)",
+      "category": "support-groups",
+      "subcategory": "mental-health-support",
+      "description": "National mental health organization with local chapters offering support groups.",
+      "contact": {
+        "phone": "(800) 950-6264",
+        "website": "https://www.nami.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "mental health",
+          "support groups",
+          "education",
+          "advocacy"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-sup-022",
+      "name": "Parent to Parent USA",
+      "category": "support-groups",
+      "subcategory": "parent-support",
+      "description": "Nationwide network matching parents of children with disabilities for peer support.",
+      "contact": {
+        "phone": "",
+        "website": "https://p2pusa.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "parent matching",
+          "emotional support",
+          "information"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-cam-023",
+      "name": "Easter Seals Camps",
+      "category": "camps",
+      "subcategory": "residential-camp",
+      "description": "Residential and day camps designed for children and adults with disabilities.",
+      "contact": {
+        "phone": "",
+        "website": "https://www.easterseals.com/our-programs/camps/"
+      },
+      "details": {
+        "ages_served": [
+          "6-12",
+          "13-18",
+          "18+"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "adaptive recreation",
+          "social skills",
+          "outdoor activities"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-leg-024",
+      "name": "Disability Rights Education & Defense Fund",
+      "category": "legal",
+      "subcategory": "legal-advocacy",
+      "description": "National law and policy center for disability rights.",
+      "contact": {
+        "phone": "(510) 644-2555",
+        "website": "https://dredf.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "disability rights",
+          "legal advocacy",
+          "education rights"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-leg-025",
+      "name": "Council of Parent Attorneys and Advocates (COPAA)",
+      "category": "legal",
+      "subcategory": "special-education-law",
+      "description": "National organization of attorneys and advocates for special education rights.",
+      "contact": {
+        "phone": "",
+        "website": "https://www.copaa.org"
+      },
+      "details": {
+        "ages_served": [
+          "3-5",
+          "6-12",
+          "13-18"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "special education law",
+          "IEP advocacy",
+          "disability rights"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-gov-026",
+      "name": "Early Intervention Program (Part C of IDEA)",
+      "category": "government",
+      "subcategory": "early-intervention",
+      "description": "Federal program providing early intervention services for infants and toddlers with developmental delays.",
+      "contact": {
+        "phone": "",
+        "website": "https://www.parentcenterhub.org/ei/"
+      },
+      "details": {
+        "ages_served": [
+          "0-2"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "early intervention",
+          "developmental delays",
+          "birth to three"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-fun-027",
+      "name": "Special Needs Alliance",
+      "category": "funding",
+      "subcategory": "financial-planning",
+      "description": "National network of disability benefits attorneys and financial planners.",
+      "contact": {
+        "phone": "",
+        "website": "https://www.specialneedsalliance.org"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "special needs trusts",
+          "financial planning",
+          "government benefits"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-fun-028",
+      "name": "Autism Speaks Financial Planning Tool",
+      "category": "funding",
+      "subcategory": "financial-tool",
+      "description": "Free financial planning toolkit for families affected by autism.",
+      "contact": {
+        "phone": "",
+        "website": "https://www.autismspeaks.org/family-services/financial-planning"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "financial planning",
+          "ABLE accounts",
+          "special needs trusts"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-tec-029",
+      "name": "LAMP Words for Life",
+      "category": "technology",
+      "subcategory": "AAC-app",
+      "description": "AAC app using motor planning approach for consistent communication.",
+      "contact": {
+        "phone": "",
+        "website": "https://www.prc-saltillo.com/products/lamp-words-for-life"
+      },
+      "details": {
+        "ages_served": [
+          "All ages"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "AAC",
+          "communication",
+          "language development"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    },
+    {
+      "id": "ne-tec-030",
+      "name": "Autism Therapy & Education Apps (Various)",
+      "category": "technology",
+      "subcategory": "educational-app",
+      "description": "Curated list of autism-specific educational and therapeutic apps.",
+      "contact": {
+        "phone": "",
+        "website": "https://www.autismspeaks.org/autism-apps"
+      },
+      "details": {
+        "ages_served": [
+          "2-5",
+          "6-12",
+          "13-18"
+        ],
+        "insurance_accepted": [],
+        "specialties": [
+          "educational apps",
+          "communication",
+          "social skills",
+          "visual schedules"
+        ]
+      },
+      "meta": {
+        "source": "seed-data-expanded",
+        "last_verified": "2026-04-22",
+        "created": "2026-04-22",
+        "status": "active"
+      }
+    }
+  ]
+}
