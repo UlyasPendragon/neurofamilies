@@ -1,0 +1,93 @@
+{{ define "main" }}
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container">
+    <h1 id="hero-heading">{{ .Site.Params.homepage.hero_text }}</h1>
+    <p class="hero-subtext">{{ .Site.Params.homepage.hero_subtext }}</p>
+    
+    <form class="search-form hero-search" action="/search/" method="get" role="search">
+      <div class="search-input-group">
+        <label for="hero-search-input" class="sr-only">Search resources</label>
+        <input 
+          type="search" 
+          id="hero-search-input"
+          name="q" 
+          placeholder="Search by city, zip code, or keyword..."
+          autocomplete="off"
+          aria-label="Search resources by city, zip code, or keyword"
+        >
+        <label for="hero-state-select" class="sr-only">Select state</label>
+        <select id="hero-state-select" name="state" aria-label="Filter by state">
+          <option value="">All States</option>
+          {{ range .Site.Data.states_list }}
+          <option value="{{ .abbr }}">{{ .name }}</option>
+          {{ end }}
+        </select>
+        <button type="submit" aria-label="Search">
+          <span aria-hidden="true">🔍</span> Search
+        </button>
+      </div>
+    </form>
+    
+    <p class="search-hint">Browse 20,000+ verified resources across all 50 US states and Canada</p>
+  </div>
+</section>
+
+<section class="categories-section" aria-labelledby="categories-heading">
+  <div class="container">
+    <h2 id="categories-heading">Browse by Category</h2>
+    <div class="category-grid" role="list">
+      {{ range .Site.Data.categories }}
+      <a href="/categories/{{ .slug }}/" class="category-card" role="listitem">
+        <span class="category-icon" aria-hidden="true">{{ .icon }}</span>
+        <span class="category-name">{{ .name }}</span>
+        <span class="category-count">{{ .count }}+ resources</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="states-section" aria-labelledby="states-heading">
+  <div class="container">
+    <h2 id="states-heading">Browse by Location</h2>
+    <div class="states-grid" role="list">
+      {{ range first 12 .Site.Data.states_list }}
+      <a href="/states/{{ .slug }}/" class="state-card" role="listitem">
+        <span class="state-name">{{ .name }}</span>
+        <span class="state-count">{{ .count }} resources</span>
+      </a>
+      {{ end }}
+    </div>
+    <div class="view-all">
+      <a href="/states/" class="btn btn-secondary">View All States →</a>
+    </div>
+  </div>
+</section>
+
+<section class="about-section" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-content">
+      <h2 id="about-heading">Why NeuroFamilies?</h2>
+      <p>Raising a neurodiverse child means navigating a maze of therapists, schools, funding programs, and support services — scattered across dozens of websites. We spent weeks finding what you need in minutes.</p>
+      <div class="about-features">
+        <div class="feature">
+          <span aria-hidden="true">✅</span>
+          <strong>Verified listings</strong> — Every resource has a last-checked date
+        </div>
+        <div class="feature">
+          <span aria-hidden="true">📍</span>
+          <strong>Location-based</strong> — Search by zip code, city, or state
+        </div>
+        <div class="feature">
+          <span aria-hidden="true">💰</span>
+          <strong>Always free</strong> — No paywalls, no accounts, no catches
+        </div>
+        <div class="feature">
+          <span aria-hidden="true">♿</span>
+          <strong>Accessible</strong> — Built for all parents, including those with disabilities
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

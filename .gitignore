@@ -1,0 +1,27 @@
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# Node (Pagefind)
+node_modules/
+package-lock.json
+package.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*
+
+# Sensitive
+*.pem
+*.key
+id_rsa
+id_ed25519

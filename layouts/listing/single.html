@@ -1,0 +1,129 @@
+{{ define "main" }}
+<article class="listing-page" itemscope itemtype="https://schema.org/MedicalBusiness">
+  <div class="container">
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/states/{{ .Params.state_slug }}/">{{ .Params.state }}</a></li>
+        <li><a href="/categories/{{ .Params.category_slug }}/">{{ .Params.category_name }}</a></li>
+        <li aria-current="page">{{ .Title }}</li>
+      </ol>
+    </nav>
+    
+    <header class="listing-header">
+      <h1 itemprop="name">{{ .Title }}</h1>
+      {{ if .Params.verified }}
+      <span class="badge badge-verified" title="This listing has been verified">✅ Verified</span>
+      {{ end }}
+      {{ if .Params.featured }}
+      <span class="badge badge-featured">⭐ Featured</span>
+      {{ end }}
+    </header>
+    
+    <div class="listing-body">
+      <div class="listing-main">
+        <section class="listing-description">
+          <h2>About</h2>
+          <p itemprop="description">{{ .Description }}</p>
+        </section>
+        
+        {{ if .Params.specialties }}
+        <section class="listing-specialties">
+          <h2>Specialties</h2>
+          <ul class="tag-list">
+            {{ range .Params.specialties }}
+            <li class="tag">{{ . }}</li>
+            {{ end }}
+          </ul>
+        </section>
+        {{ end }}
+        
+        {{ if .Params.ages_served }}
+        <section class="listing-ages">
+          <h2>Ages Served</h2>
+          <p>{{ delimit .Params.ages_served ", " }}</p>
+        </section>
+        {{ end }}
+        
+        {{ if .Params.insurance_accepted }}
+        <section class="listing-insurance">
+          <h2>Insurance Accepted</h2>
+          <ul class="tag-list">
+            {{ range .Params.insurance_accepted }}
+            <li class="tag">{{ . }}</li>
+            {{ end }}
+          </ul>
+        </section>
+        {{ end }}
+        
+        {{ if .Params.languages }}
+        <section class="listing-languages">
+          <h2>Languages</h2>
+          <p>{{ delimit .Params.languages ", " }}</p>
+        </section>
+        {{ end }}
+      </div>
+      
+      <aside class="listing-sidebar">
+        <div class="contact-card">
+          <h2>Contact Information</h2>
+          
+          {{ if .Params.phone }}
+          <div class="contact-item">
+            <span aria-hidden="true">📞</span>
+            <a href="tel:{{ .Params.phone }}" itemprop="telephone" class="phone-link">
+              {{ .Params.phone_formatted | default .Params.phone }}
+            </a>
+          </div>
+          {{ end }}
+          
+          {{ if .Params.website }}
+          <div class="contact-item">
+            <span aria-hidden="true">🌐</span>
+            <a href="{{ .Params.website }}" itemprop="url" target="_blank" rel="noopener">
+              Visit Website
+            </a>
+          </div>
+          {{ end }}
+          
+          {{ if .Params.email }}
+          <div class="contact-item">
+            <span aria-hidden="true">✉️</span>
+            <a href="mailto:{{ .Params.email }}" itemprop="email">
+              {{ .Params.email }}
+            </a>
+          </div>
+          {{ end }}
+          
+          {{ if .Params.address }}
+          <div class="contact-item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span aria-hidden="true">📍</span>
+            <address>
+              <span itemprop="streetAddress">{{ .Params.address.street }}</span><br>
+              <span itemprop="addressLocality">{{ .Params.address.city }}</span>, 
+              <span itemprop="addressRegion">{{ .Params.address.state }}</span> 
+              <span itemprop="postalCode">{{ .Params.address.zip }}</span>
+            </address>
+          </div>
+          {{ end }}
+        </div>
+        
+        <div class="listing-meta">
+          <p class="last-verified">
+            <strong>Last verified:</strong> {{ .Params.last_verified | default "Not yet verified" }}
+          </p>
+          <p class="listing-source">
+            <strong>Source:</strong> {{ .Params.source | default "Community submitted" }}
+          </p>
+        </div>
+        
+        <div class="listing-actions">
+          <a href="/submit/?edit={{ .Params.id }}" class="btn btn-secondary">
+            ✏️ Suggest an Edit
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</article>
+{{ end }}

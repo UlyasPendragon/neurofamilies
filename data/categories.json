@@ -1,0 +1,16 @@
+[
+  {"name": "ABA Therapy", "slug": "aba-therapy", "icon": "🧩", "count": 4200},
+  {"name": "Speech Therapy", "slug": "speech-therapy", "icon": "🗣️", "count": 3100},
+  {"name": "Occupational Therapy", "slug": "occupational-therapy", "icon": "🖐️", "count": 2800},
+  {"name": "Mental Health", "slug": "mental-health", "icon": "💚", "count": 2500},
+  {"name": "Schools & Education", "slug": "schools", "icon": "🏫", "count": 1800},
+  {"name": "Respite Care", "slug": "respite-care", "icon": "🏠", "count": 1200},
+  {"name": "Support Groups", "slug": "support-groups", "icon": "👥", "count": 950},
+  {"name": "Grants & Funding", "slug": "funding", "icon": "💰", "count": 680},
+  {"name": "Government Programs", "slug": "government", "icon": "🏛️", "count": 520},
+  {"name": "Sensory Products", "slug": "sensory-products", "icon": "🎯", "count": 450},
+  {"name": "Camps & Recreation", "slug": "camps", "icon": "⛺", "count": 380},
+  {"name": "Legal & Advocacy", "slug": "legal", "icon": "⚖️", "count": 290},
+  {"name": "Adult Services", "slug": "adult-services", "icon": "🧑", "count": 620},
+  {"name": "Technology & Apps", "slug": "technology", "icon": "📱", "count": 180}
+]

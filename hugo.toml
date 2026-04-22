@@ -1,0 +1,48 @@
+baseURL = "https://neurofamilies.org/"
+languageCode = "en-us"
+title = "NeuroFamilies — Resource Directory for Neurodiverse Families"
+theme = ""
+
+[params]
+  description = "Find autism, ADHD, and neurodiverse resources near you. Free searchable directory of therapists, schools, funding, support groups, and more across North America."
+  author = "NeuroFamilies"
+  
+[params.homepage]
+  hero_text = "Find neurodiverse resources near you"
+  hero_subtext = "Free searchable directory of 20,000+ therapists, schools, funding programs, and support services across North America."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[menu]
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 1
+  [[menu.main]]
+    name = "States"
+    url = "/states/"
+    weight = 2
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+  [[menu.main]]
+    name = "Submit a Resource"
+    url = "/submit/"
+    weight = 5

@@ -1,0 +1,63 @@
+{{ define "main" }}
+<section class="search-page">
+  <div class="container">
+    <h1>Search Resources</h1>
+    
+    <form class="search-form" action="/search/" method="get" role="search">
+      <div class="search-input-group">
+        <label for="search-input" class="sr-only">Search resources</label>
+        <input 
+          type="search" 
+          id="search-input"
+          name="q" 
+          placeholder="Search by city, zip code, keyword, or provider name..."
+          autocomplete="off"
+          value="{{ .Params.query }}"
+        >
+        <button type="submit">🔍 Search</button>
+      </div>
+    </form>
+    
+    <!-- Pagefind search UI -->
+    <div id="search" class="pagefind-search"></div>
+    
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ 
+          element: "#search",
+          showSubResults: true,
+          showImages: false,
+          translations: {
+            placeholder: "Search resources by name, city, or keyword...",
+            zero_results: "No resources found. Try a different search or browse by category.",
+          }
+        });
+      });
+    </script>
+  </div>
+</section>
+
+<section class="browse-alternatives">
+  <div class="container">
+    <h2>Or Browse Resources</h2>
+    <div class="browse-links">
+      <div class="browse-col">
+        <h3>By Category</h3>
+        <ul>
+          {{ range .Site.Data.categories }}
+          <li><a href="/categories/{{ .slug }}/">{{ .icon }} {{ .name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="browse-col">
+        <h3>By State</h3>
+        <ul>
+          {{ range .Site.Data.states_list }}
+          <li><a href="/states/{{ .slug }}/">{{ .name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
