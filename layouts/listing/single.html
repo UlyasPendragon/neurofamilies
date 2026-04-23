@@ -3,9 +3,9 @@
   <div class="container">
     <nav aria-label="Breadcrumb" class="breadcrumb">
       <ol>
-        <li><a href="/">Home</a></li>
-        <li><a href="/states/{{ .Params.state_slug }}/">{{ .Params.state }}</a></li>
-        <li><a href="/categories/{{ .Params.category_slug }}/">{{ .Params.category_name }}</a></li>
+        <li><a href='{{ "/" | relURL }}'>Home</a></li>
+        <li><a href='{{ printf "/states/%s/" .Params.state_slug | relURL }}'>{{ .Params.state }}</a></li>
+        <li><a href='{{ printf "/categories/%s/" .Params.category_slug | relURL }}'>{{ .Params.category_name }}</a></li>
         <li aria-current="page">{{ .Title }}</li>
       </ol>
     </nav>
@@ -118,7 +118,7 @@
         </div>
         
         <div class="listing-actions">
-          <a href="/submit/?edit={{ .Params.id }}" class="btn btn-secondary">
+          <a href='{{ "/submit/" | relURL }}?edit={{ .Params.id }}' class="btn btn-secondary">
             ✏️ Suggest an Edit
           </a>
         </div>

@@ -1,6 +1,6 @@
 <header role="banner">
   <div class="container header-inner">
-    <a href="/" class="logo" aria-label="NeuroFamilies home">
+    <a href='{{ "/" | relURL }}' class="logo" aria-label="NeuroFamilies home">
       <span class="logo-icon" aria-hidden="true">🧠</span>
       <span class="logo-text">Neuro<strong>Families</strong></span>
     </a>
@@ -13,7 +13,7 @@
       <ul>
         {{ range .Site.Menus.main }}
         <li>
-          <a href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}aria-current="page"{{ end }}>
+          <a href="{{ .URL | relURL }}" {{ if eq $.RelPermalink .URL }}aria-current="page"{{ end }}>
             {{ .Name }}
           </a>
         </li>

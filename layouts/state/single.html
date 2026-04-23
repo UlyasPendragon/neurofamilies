@@ -3,8 +3,8 @@
   <div class="container">
     <nav aria-label="Breadcrumb" class="breadcrumb">
       <ol>
-        <li><a href="/">Home</a></li>
-        <li><a href="/states/">States</a></li>
+        <li><a href='{{ "/" | relURL }}'>Home</a></li>
+        <li><a href='{{ "/states/" | relURL }}'>States</a></li>
         <li aria-current="page">{{ .Title }}</li>
       </ol>
     </nav>
@@ -12,7 +12,7 @@
     <h1>Autism & Neurodiverse Resources in {{ .Title }}</h1>
     <p class="state-description">Find ABA therapy, speech therapy, support groups, funding programs, and more in {{ .Title }}. {{ .Params.resource_count }} verified resources.</p>
     
-    <form class="search-form state-search" action="/search/" method="get" role="search">
+    <form class="search-form state-search" action='{{ "/search/" | relURL }}' method="get" role="search">
       <div class="search-input-group">
         <label for="state-search" class="sr-only">Search {{ .Title }} resources</label>
         <input type="search" id="state-search" name="q" 
@@ -30,7 +30,7 @@
     <h2 id="categories-heading">Browse by Category</h2>
     <div class="category-grid">
       {{ range .Params.categories }}
-      <a href="/states/{{ $.Params.state_slug }}/{{ .slug }}/" class="category-card">
+      <a href='{{ printf "/states/%s/%s/" $.Params.state_slug .slug | relURL }}' class="category-card">
         <span class="category-icon" aria-hidden="true">{{ .icon }}</span>
         <span class="category-name">{{ .name }}</span>
         <span class="category-count">{{ .count }} resources</span>
@@ -95,7 +95,7 @@
     
     <div class="view-all">
       <p>Showing {{ len .Params.resources }} of {{ .Params.resource_count }} resources.</p>
-      <a href="/search/?state={{ .Params.state_abbr }}" class="btn btn-primary">
+      <a href='{{ "/search/" | relURL }}?state={{ .Params.state_abbr }}' class="btn btn-primary">
         Search All {{ .Title }} Resources →
       </a>
     </div>
@@ -106,7 +106,7 @@
   <div class="container">
     <h2 id="submit-heading">Know a resource we're missing?</h2>
     <p>Help other {{ .Title }} families by suggesting a resource for our directory.</p>
-    <a href="/submit/" class="btn btn-secondary">Submit a Resource →</a>
+    <a href='{{ "/submit/" | relURL }}' class="btn btn-secondary">Submit a Resource →</a>
   </div>
 </section>
 {{ end }}

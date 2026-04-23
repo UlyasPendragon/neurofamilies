@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="{{ $style.Permalink }}">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href='{{ "/favicon.svg" | relURL }}'>
   
   <!-- Accessibility: Skip to content -->
   <style>
@@ -51,7 +51,7 @@
   <script src="{{ $js.Permalink }}" defer></script>
   
   <!-- Pagefind -->
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-  <script src="/pagefind/pagefind-ui.js" defer></script>
+  <link href='{{ "/pagefind/pagefind-ui.css" | relURL }}' rel="stylesheet">
+  <script src='{{ "/pagefind/pagefind-ui.js" | relURL }}' defer></script>
 </body>
 </html>
